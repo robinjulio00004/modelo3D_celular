@@ -12,7 +12,7 @@
 	<!-- Scene. -->
      <a-scene embedded arjs embedded renderer="logarithmicDepthBuffer: true;" xr-mode-ui="enabled: true">
 	<a-assets> <!-- Asset management system. -->
-    	<video id="evideo" preload="auto" loop="true" webkit-playsinline playsinline crossorigin="anonymous">
+    	<video id="evideo" autoplay preload="auto" loop="true" webkit-playsinline playsinline crossorigin="anonymous">
 		<!-- HEVC video for safari support -->
         <source src="video_cel.mov" type="video/mp4;codecs=hvc1">
           	<!-- WEBM video for chrome and firefox -->
@@ -20,13 +20,14 @@
 	</video>
   	</a-assets>
 		
-	     <a-video src="#evideo" scale="1 1 1" position="0 0 0" rotation="0 0 0" width="2" height="1"></a-video>
+	     <a-video src="#evideo" scale="1 1 1" position="0 0 0" rotation="0 0 0" width="3" height="1.5"></a-video>
 
 	  <a-camera></a-camera>      
       </a-scene>
 </body>
 
 </html>
+
 
 
 
