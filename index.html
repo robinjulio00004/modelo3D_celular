@@ -10,7 +10,7 @@
 	</head>
 <body style="margin : 0px; overflow: hidden;">
 	<!-- Scene. -->
-     <a-scene embedded arjs embedded renderer="logarithmicDepthBuffer: true;" xr-mode-ui="enabled: true">
+     	<a-scene embedded arjs embedded renderer="logarithmicDepthBuffer: true;" xr-mode-ui="enabled: true">
 	<a-assets> <!-- Asset management system. -->
     	<video id="evideo" autoplay preload="auto" loop="true" webkit-playsinline playsinline crossorigin="anonymous">
 		<!-- HEVC video for safari support -->
@@ -19,24 +19,10 @@
         <source src="video_cel.webm" type="video/webm" />
 	</video>
   	</a-assets>
-	     <!--<a-plane position="0 0 0" rotation="0 0 0" width="2" height="2" color="#FFC65D"></a-plane>-->
-	     <a-video src="#evideo" scale="1 1 1" position="0 0 0" rotation="0 0 0" width="3" height="1.5"></a-video>
-
-	     	<!-- Camera -->
-	      	<a-entity position="0 0 6">
-	  		<a-camera></a-camera>
-		</a-entity>     
-      </a-scene>
+	<!--<a-plane position="0 0 0" rotation="0 0 0" width="2" height="2" color="#FFC65D"></a-plane>-->
+	<a-video src="#evideo" scale="1 1 1" position="0 0 0" rotation="0 0 0" width="3" height="1.5"></a-video>
+	<!-- Camera -->
+	<a-entity position="0 0 6"><a-camera></a-camera></a-entity>     
+     	</a-scene>
 </body>
-
 </html>
-
-
-
-
-
-
-
-
-
-
