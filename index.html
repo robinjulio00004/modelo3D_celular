@@ -1,0 +1,28 @@
+<!doctype html>
+<!--video en Realidad Aumentada-->
+<html lang="en-US">
+	<head>
+	<meta charset="utf-8"/> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+    	<script src="aframe-v1.6.0.min.js"></script>
+    	<script src="aframe-ar.js"></script>
+	</head>
+<body style="margin : 0px; overflow: hidden;">
+	<!-- Scene. -->
+     <a-scene embedded arjs embedded renderer="logarithmicDepthBuffer: true;" xr-mode-ui="enabled: true">
+	<a-assets> <!-- Asset management system. -->
+    	<video id="evideo" preload="auto" autoplay loop="true" webkit-playsinline playsinline crossorigin="anonymous">
+		<!-- HEVC video for safari support -->
+        <source src="holg_a.mov" type="video/mp4;codecs=hvc1">
+          	<!-- WEBM video for chrome and firefox -->
+        <source src="holg.webm" type="video/webm" />
+	</video>
+  	</a-assets>
+		
+	     <a-video src="#evideo" scale="0.24 0.22 0.22" position="0 0 -0.56" rotation="-90 0 0" width="2.5" height="1.5"></a-video>
+
+	  <a-camera></a-camera>      
+      </a-scene>
+</body>
+</html>
