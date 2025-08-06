@@ -11,11 +11,15 @@
     }
     .button{
       text-align: center;
+      font-family: sans-serif;
+      font-size: 2.6em;
+      font-weight: bold;
       padding: 0.25em;
       border-radius: 4px;
       border: 1px solid white;
       background: rgba(128,128,128,0);
-      color: blue;
-      width: 5em;
+      color: red;
+      width: 6em;
       height: 2em;
+
     }
