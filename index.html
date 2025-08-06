@@ -12,17 +12,18 @@
 	<!-- Scene. -->
      <a-scene embedded arjs embedded renderer="logarithmicDepthBuffer: true;" xr-mode-ui="enabled: true">
 	<a-assets> <!-- Asset management system. -->
-    	<video id="evideo" preload="auto" autoplay loop="true" webkit-playsinline playsinline crossorigin="anonymous">
+    	<video id="evideo" preload="auto" loop="true" webkit-playsinline playsinline crossorigin="anonymous">
 		<!-- HEVC video for safari support -->
-        <source src="holg_a.mov" type="video/mp4;codecs=hvc1">
+        <source src="video_cel.mov" type="video/mp4;codecs=hvc1">
           	<!-- WEBM video for chrome and firefox -->
-        <source src="holg.webm" type="video/webm" />
+        <source src="video_cel.webm" type="video/webm" />
 	</video>
   	</a-assets>
 		
-	     <a-video src="#evideo" scale="0.24 0.22 0.22" position="0 0 -0.56" rotation="-90 0 0" width="2.5" height="1.5"></a-video>
+	     <a-video src="#evideo" scale="0.24 0.22 0.22" position="0 0 0" rotation="-90 0 0" width="3" height="1.5"></a-video>
 
 	  <a-camera></a-camera>      
       </a-scene>
 </body>
+
 </html>
