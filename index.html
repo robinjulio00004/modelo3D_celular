@@ -7,11 +7,18 @@
 	<meta name="apple-mobile-web-app-capable" content="yes">
     	<script src="aframe-v1.6.0.min.js"></script>
     	<script src="aframe-ar.js"></script>
+	<link rel="stylesheet" href="font-poppins.css">
 	<link rel="stylesheet" href="styles.css">
 	</head>
 <body style="margin : 0px; overflow: hidden;">
-	<div class="buttons">
+	<!--<div class="buttons">
  	 <button id="boton" class="button" type="button" onclick="funcion_play()">Reproducir</button>
+	</div>-->
+	<div class="buttons">
+        <a id="boton" class="button" onclick="funcion_play()">
+          <i></i><i></i>
+          <span>boton</span>
+        </a>
 	</div>
 	<!-- Scene. -->
      	<a-scene embedded arjs embedded renderer="logarithmicDepthBuffer: true;" xr-mode-ui="enabled: true">
@@ -29,6 +36,7 @@
 	<a-entity position="0 0 3"><a-camera look-controls="false"></a-camera></a-entity>     
      	</a-scene>
 </body>
+	<script src="anim_script.js"></script>
 	<script>
 const btn1 = document.querySelector('#boton');
 const vdo=document.querySelector('#evideo');
@@ -39,6 +47,7 @@ function funcion_play()
 }
 	</script>
 </html>
+
 
 
 
